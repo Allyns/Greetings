@@ -1,0 +1,34 @@
+<!--create.wxml-->
+<view class="container">
+    <view class="inner">
+        <form bindsubmit="generate">
+            <!-- 称呼 -->
+            <view class="named {{isMore ? 'more' : ''}}">
+                <input bindinput="changeToName" name="toname" placeholder="怎么称呼TA?(不超过10个字)" input-placeholder="i-named" />
+            </view>
+            <view class="cate">
+                <div class="hd">
+                    <text>选择祝福类型</text>
+                </div>
+                <scroll-view scroll-y='true' class="scview">
+                    <radio-group name="relationTypeName">
+                        <view class="labeledfu">
+                            <block wx:for="{{typeList}}" wx:key="{{item}}">
+                                <view class="labeled {{item.neirong == query.relationTypeName ? 'select' : ''}}" data-id="{{item.neirong}}" bindtap="tapRelation">
+                                    <radio value="{{item.neirong}}" hidden checked="{{item.neirong == ''}}" id="{{'r'+item.name}}" />
+                                    <label for="{{'r'+item.neirong}}">
+                                        <text class='itemtext'>{{item.neirong}}</text>
+                                    </label>
+                                </view>
+                            </block>
+                        </view>
+                    </radio-group>
+                </scroll-view>
+            </view>
+            <!-- 生成 -->
+            <view>
+                <button form-type="submit" hover-class="navigator-hover" class="submit-btn">捎句祝福话</button>
+            </view>
+        </form>
+    </view>
+</view>

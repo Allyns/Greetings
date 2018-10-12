@@ -1,0 +1,23 @@
+<view class='rootview'>
+    <text class='hd'>选择问候语分类</text>
+    <view class="row">
+        <block wx:key="{{item.seq}}" wx:for='{{typeList}}'>
+            <view wx:if="{{index<3}}" class="item" bindtap="typeclick" data-typename="{{item.type_name}}">
+                <view class="head " data-id="{{item.seq}}" bindtap="tap_relation">
+                    <image class="avatar" src="../../images/{{item.img}}.jpg"></image>
+                </view>
+                <text class="call">{{item.type_name}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="row2">
+        <block wx:key="{{item.seq}}" wx:for='{{typeList}}'>
+            <view wx:if="{{index>=3}}" class="item" bindtap="typeclick" data-typename="{{item.type_name}}">
+                <view class="head " data-id="{{item.seq}}" bindtap="tap_relation">
+                    <image class="avatar" src="../../images/{{item.img}}.jpg"></image>
+                </view>
+                <text class="call">{{item.type_name}}</text>
+            </view>
+        </block>
+    </view>
+</view>

@@ -1,0 +1,75 @@
+.hd {
+    display: flex;
+    justify-content: center;
+    font-size: 35rpx;
+    padding-top: 180rpx;
+    margin-bottom: 40rpx;
+    margin-top: 100rpx;
+}
+
+.item {
+    width: 90px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.head {
+    display: block;
+    width: 130rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    opacity: 0.6;
+}
+
+.avatar {
+    display: flex;
+    width: 47px;
+    height: 47px;
+    margin-left: 11px;
+    flex-direction: row;
+}
+
+.call {
+    margin-top: 12rpx;
+    display: flex;
+    font-size: 27rpx;
+    flex-direction: row;
+    font-weight: bolder;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20rpx;
+    margin-left: 100rpx;
+    margin-right: 100rpx;
+}
+
+.rootview {
+    list-style-type: none;
+    margin: 10px;
+    height: 92%;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
